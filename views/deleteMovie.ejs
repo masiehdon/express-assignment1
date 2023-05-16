@@ -1,0 +1,15 @@
+  <!DOCTYPE html>
+<html>
+
+  <%- include('./partials/head.ejs', {title: "searchbar"}) %>
+  <%- include('./partials/nav.ejs', {title: "Nav"}) %>
+
+
+<form method="POST" action="/deleteMovie?_method=DELETE">
+  <label for="delete">Delete Movie</label>
+  <input type="text" id="movie" name="delete">
+  <button type="submit">Submit</button>
+</form>
+
+
+</html>

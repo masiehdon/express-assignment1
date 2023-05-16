@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <%- include('./partials/head.ejs', {title: "searchbar"}) %>
+  <%- include('./partials/nav.ejs', {title: "Nav"}) %>
+  <body>
+    <main>
+      <h1>Movies</h1>
+      <form>
+        <label for="search">Search:</label>
+        <input
+          type="text"
+          id="search"
+          name="search"
+          value="<%= searchTerm %>"
+        />
+        <button type="submit">Search</button>
+
+        
+      <ul>
+        <% movies.forEach(function(movie) { %>
+        <li><%= movie.Title %></li>
+        <% }); %>
+      </ul>
+    </main>
+    <footer><%- include('./partials/footer.ejs') %></footer>
+  </body>
+</html>
