@@ -18,8 +18,8 @@ const apiKey = "5"
 
 const validKey = (req, res, next) => {
   const key = req.query.key;
-  if (!validKey) {
-    res.status(404).send('<h1>Page not found!</h1>');
+  if (!key) {
+    res.status(404).send('Page not found!');
   } else if(key != apiKey) {
     res.status(403).send('Not authorized')
   } else {
