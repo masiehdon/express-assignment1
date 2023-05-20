@@ -1,4 +1,4 @@
- const movies = [
+ const movieData = [
   {
     Title: "Becoming Bond",
     Year: "2017",
@@ -2897,4 +2897,4 @@
   },
 ];
 
-module.exports = movies;
+module.exports = movieData;
