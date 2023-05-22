@@ -58,7 +58,7 @@ id (string, required): The IMDb ID of the movie
 Response Format: Plain Text
 Sample Request: /movies/tt6110504
 Sample Response: 'Becoming Bond' was removed
-
+If there is no movie with that ID in the database then the user gets a message: 'No movie found'
 ## Add New Movie
 Adds a new movie to the database.
 
